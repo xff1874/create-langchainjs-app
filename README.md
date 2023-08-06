@@ -24,8 +24,6 @@ npx create-langchainjs-app@latest my-langchainjs-app
 ```
 2. set up your OpenAI key in .env
 
-
-
 ### how to debug in vscode
 
 1. npm run dev
