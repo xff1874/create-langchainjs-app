@@ -44,7 +44,3 @@ npx create-langchainjs-app@latest my-langchainjs-app
 }
 ```
 
-
-
-}
-```
