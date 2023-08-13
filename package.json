@@ -1,6 +1,6 @@
 {
   "name": "create-langchainjs-app",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "makes it easier to create langchainjs",
   "main": "index.js",
   "scripts": {
