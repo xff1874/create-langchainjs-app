@@ -23,8 +23,9 @@ export const initializeGit = async (projectDir: string) => {
 
     try {
         // const branchName = await getDefaultBranch();
-        await execa("git", ["init", '--initial-branch=main'], { cwd: projectDir, });
+        await execa("git", ["init"], { cwd: projectDir, });
         await execa("git", ["add", "."], { cwd: projectDir });
+        await execa("git", ["commit", "-m", "feat: initial commit"], { cwd: projectDir });
 
         // await $`git commit -m "feat: initial commit"`;
         spinner.succeed(

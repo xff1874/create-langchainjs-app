@@ -10,10 +10,7 @@ import { parseNameAndPath } from "@/utils/parseNameAndPath.js";
 import { createProject } from "@/helpers/createProject.js";
 import { installDependencies } from "@/helpers/installDependencies.js";
 import { logNextSteps } from "@/helpers/logNextSteps.js";
-
-import { execa } from 'execa';
-
-
+import { initializeGit } from "@/helpers/git.js";
 
 
 
@@ -39,9 +36,9 @@ const main = async () => {
         spaces: 2,
     });
 
-    // await initializeGit(projectDir);
-    logger.info("Initializing Git...");
-    await execa("git", ["init"], { cwd: projectDir });
+    await initializeGit(projectDir);
+    // logger.info("Initializing Git...");
+    // await execa("git", ["init"], { cwd: projectDir });
 
     await installDependencies({ projectDir });
 

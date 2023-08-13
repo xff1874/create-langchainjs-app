@@ -34,7 +34,10 @@ export const scaffoldProject = async ({
     const scaffoldedName = chalk.cyan.bold(projectName);
 
 
+    const finalPath = path.resolve(projectDir);
+
+
     spinner.succeed(
-        `${scaffoldedName} ${chalk.green("scaffolded successfully!")}\n`
+        ` ${chalk.green(`${finalPath}  created successfully!`)}\n`
     );
 }
