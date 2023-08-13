@@ -1,6 +1,6 @@
 {
   "name": "create-langchainjs-app",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "a cli tool specifically designed for creating standalone langchainjS projects",
   "main": "index.js",
   "scripts": {
