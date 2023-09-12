@@ -29,9 +29,7 @@ export const initializeGit = async (projectDir: string) => {
 
         // await $`git commit -m "feat: initial commit"`;
         spinner.succeed(
-            `${chalk.green("Successfully initialized and commit")} ${chalk.green.bold(
-                "git"
-            )}\n`
+            `${chalk.green("Successfully initialized and create a commit")}\n`
         );
 
     } catch (error) {
