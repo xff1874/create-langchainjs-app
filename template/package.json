@@ -6,7 +6,6 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsx watch src/index.ts",
-    "prepare": "husky install",
     "pre-commit": "lint-staged"
   },
   "author": "",
