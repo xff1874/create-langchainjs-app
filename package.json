@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch",
+    "dev": "tsx watch src/index.ts",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -24,14 +24,16 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "repository": "https://github.com/xff1874/create-langchainjs-app.git",
   "author": {
-    "name": "dongdong zhang",
+    "name": "richard zhang",
     "email": "zwd321081@gmail.com"
   },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.4.0",
     "tsup": "^7.1.0",
+    "tsx": "^3.12.8",
     "typescript": "^5.1.6"
   },
   "dependencies": {
